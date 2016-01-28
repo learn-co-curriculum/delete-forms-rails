@@ -64,10 +64,10 @@ caligula@rome-circa-50-AD.com
 ```
 
 Enhance!
-
-> <form accept-charset="UTF-8" action="/people/1" method="**post**">
->   <input name="_method" type="hidden" value="**delete**" />
-
+```html
+ <form accept-charset="UTF-8" action="/people/1" method="**post**">
+ <input name="_method" type="hidden" value="**delete**" />
+```
 What's going on? Why the extra input?
 
 
@@ -181,3 +181,5 @@ the user has JavaScript disabled.
 allowing the user to make sure they're ready to delete someone forever (what a
 decision!).
 
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/delete-forms-rails'>Delete forms</a> on Learn.co and start learning to code for free.</p>
