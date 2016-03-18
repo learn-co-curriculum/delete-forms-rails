@@ -178,9 +178,11 @@ JavaScript built into Rails.
 It will use `GET` (the default method used by all browsers for HTML links) if
 the user has JavaScript disabled.
 
-`data-method` pops up a confirmation window before the link is followed,
+`data-confirm` pops up a confirmation window before the link is followed,
 allowing the user to make sure they're ready to delete someone forever (what a
 decision!).
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/delete-forms-rails' title='DELETE Forms and Requests'>DELETE Forms and Requests</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/delete-forms-rails'>Delete forms</a> on Learn.co and start learning to code for free.</p>
