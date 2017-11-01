@@ -33,7 +33,7 @@ Before we dive into the problem with `DELETE` (and `PATCH`) requests, let's proc
 ```ruby
 # config/routes.rb
 
-delete 'people/:id', to: 'people#destroy'
+delete '/people/:id', to: 'people#destroy, as:'person'
 ```
 
 ```erb
@@ -41,7 +41,7 @@ delete 'people/:id', to: 'people#destroy'
 
 <h2><%= @person.name %></h2>
 <%= @person.email %>
-<%= form_tag people_path(@person.id), method: "delete" %>
+<%= form_tag person_path(@person.id), method: "delete" do %>
   <%= submit_tag "Delete #{@person.name}" %>
 <% end %>
 ```
