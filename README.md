@@ -165,8 +165,24 @@ the user has JavaScript disabled.
 allowing the user to make sure they're ready to delete someone forever (what a
 decision!).
 
+## Use `button_to`
+
+A slight variation from the `link_to` method described above is using `button_to` to send a delete request.
+
+Says the [documentation][btdoc]:
+
+> \[`button_to`\] Generates a form containing a single button that submits to the URL created by the set of options.
+So while we taught `link_to` first, Rails thinks that `button_to` is a safer tool for representing delete requests. Interesting! The `button_to` helper works very similarly to `link_to`:
+
+```ruby
+<%= button_to "Delete Image", image_path(@image), method: :delete %>
+```
+
+As you can read in the documentation, or guess thanks to Ruby's simple syntax, the first argument is the button text; the second argument is an expression of a route, and `method` is used to tell the form to send its payload as an HTTP `DELETE` action.
+
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/delete-forms-rails' title='DELETE Forms and Requests'>DELETE Forms and Requests</a> on Learn.co and start learning to code for free.</p>
 
+[btdoc]: https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to
 [ged]: https://www.khanacademy.org/humanities/renaissance-reformation/northern/hieronymus-bosch/a/bosch-the-garden-of-earthly-delights
 [abillion]: http://venturebeat.com/2015/05/28/google-chrome-now-has-over-1-billion-users/
 [stack]: http://programmers.stackexchange.com/questions/114156/why-are-there-are-no-put-and-delete-methods-on-html-forms
