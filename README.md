@@ -165,7 +165,7 @@ the user has JavaScript disabled.
 allowing the user to make sure they're ready to delete someone forever (what a
 decision!).
 
-## Use `button_to`
+# Use `button_to`
 
 A slight variation from the `link_to` method described above is using `button_to` to send a delete request.
 
