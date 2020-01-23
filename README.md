@@ -172,6 +172,7 @@ A slight variation from the `link_to` method described above is using `button_to
 Says the [documentation][btdoc]:
 
 > \[`button_to`\] Generates a form containing a single button that submits to the URL created by the set of options.
+
 So while we taught `link_to` first, Rails thinks that `button_to` is a safer tool for representing delete requests. Interesting! The `button_to` helper works very similarly to `link_to`:
 
 ```ruby
