@@ -181,8 +181,6 @@ So while we taught `link_to` first, Rails thinks that `button_to` is a safer too
 
 As you can read in the documentation, or guess thanks to Ruby's simple syntax, the first argument is the button text; the second argument is an expression of a route, and `method` is used to tell the form to send its payload as an HTTP `DELETE` action.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/delete-forms-rails' title='DELETE Forms and Requests'>DELETE Forms and Requests</a> on Learn.co and start learning to code for free.</p>
-
 [btdoc]: https://api.rubyonrails.org/v5.1.7/classes/ActionView/Helpers/UrlHelper.html#method-i-button_to
 [ged]: https://www.khanacademy.org/humanities/renaissance-reformation/northern/hieronymus-bosch/a/bosch-the-garden-of-earthly-delights
 [abillion]: http://venturebeat.com/2015/05/28/google-chrome-now-has-over-1-billion-users/
