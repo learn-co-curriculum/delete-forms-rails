@@ -16,7 +16,7 @@ But, all is not well in Browsertown. In many cases, sending a request with the
 
 Why? What can we do as a workaround?
 
-# Objectives
+## Objectives
 
 After this lesson, you'll be able to...
 
@@ -27,7 +27,7 @@ After this lesson, you'll be able to...
   to the `index` action
 - Use `link_to` and `button_to :method => :delete` to destroy an object without a form
 
-# Ignorance is bliss
+## Ignorance is bliss
 
 Before we dive into the problem with `DELETE` (and `PATCH`) requests, let's
 proceed as if we were none the wiser, setting up our route and form as usual:
@@ -70,7 +70,7 @@ Enhance!
 
 What's going on? Why the extra input?
 
-# Programming is hard
+## Programming is hard
 
 Web developers love to be on the cutting edge. We hoover up new tools and
 techniques and aren't afraid of breaking a few million eggs to figure out that
@@ -95,7 +95,7 @@ or even decades, while the maintainers go back and forth trying to find a better
 approach that won't open an eldritch portal to Bosch's [Garden of Earthly
 Delights][ged].
 
-# What's all this have to do with `DELETE` requests?
+## What's all this have to do with `DELETE` requests?
 
 As of HTML5, forms officially do not support `DELETE` and `PATCH` for their methods.
 
@@ -114,7 +114,7 @@ worlds:
 - We get to **maintain our sanity** and not worry about W3C drama while writing
   views.
 
-# That's great. Can we actually delete something now?
+## That's great. Can we actually delete something now?
 
 Thus enlightened, we can (finally) proceed with our original goal:
 
@@ -130,7 +130,7 @@ Thus enlightened, we can (finally) proceed with our original goal:
 Nothing too special happening here except for a bit of method-chaining to
 immediately destroy the found instance.
 
-# Fancy JavaScript Helper
+## Fancy JavaScript Helper
 
 As shown, you have to go to a user's `show` page to delete them. What if we want
 an admin control panel where users can be deleted from a list?
@@ -165,7 +165,7 @@ the user has JavaScript disabled.
 allowing the user to make sure they're ready to delete someone forever (what a
 decision!).
 
-# Use `button_to`
+## Use button_to
 
 A slight variation from the `link_to` method described above is using `button_to` to send a delete request.
 
